@@ -3,435 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&amp;M Contadores | Estudio contable online</title>
+  <meta name="description" content="M&amp;M Contadores: estudio contable online para monotributistas, responsables inscriptos, empleadores y PYMEs." />
 
-  <title>M&M Contadores | Más que impuestos</title>
-  <meta name="description" content="M&M Contadores: servicios impositivos, financieros y de gestión. Monotributo, responsables inscriptos, empleadores y gestión inteligente para PYMEs. 100% online." />
-
-  <!-- Open Graph (WhatsApp/LinkedIn/Facebook) -->
-  <meta property="og:title" content="M&M Contadores | Más que impuestos" />
-  <meta property="og:description" content="Ordenamos tus finanzas, tu negocio y la gestión de tus números. 100% online." />
+  <meta property="og:title" content="M&amp;M Contadores | Estudio contable online" />
+  <meta property="og:description" content="Contabilidad, impuestos, sueldos y gestion para emprendedores, profesionales y PYMEs." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mmcontadores.com.ar" />
   <meta property="og:image" content="https://mmcontadores.com.ar/img/MMc.png" />
 
-  <!-- Twitter/X -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="M&M Contadores | Más que impuestos" />
-  <meta name="twitter:description" content="Servicios impositivos, financieros y de gestión. 100% online." />
-  <meta name="twitter:image" content="https://mmcontadores.com.ar/img/MMc.png" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="/style/styles.css" />
-  <link rel="icon" type="image/png" href="/img/MMc.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="icon" type="image/png" href="img/MMc.png" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="top">
-    <nav class="nav" aria-label="Principal">
-      <a class="logo" href="#inicio" aria-label="Ir al inicio">
-        <img class="logo-img" src="img/MMc.png" alt="" aria-hidden="true">
-        <span class="logo-text">Contadores</span>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a href="mailto:contadores.mm@gmail.com">contadores.mm@gmail.com</a>
+      <span>Lun a Vie: 9 a 18 h</span>
+      <a href="https://wa.me/5491150582474" target="_blank" rel="noopener">+54 9 11 5058-2474</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Principal">
+      <a class="brand" href="index.html" aria-label="M&amp;M Contadores">
+        <img src="img/MMc.png" alt="" class="brand-mark" />
+        <span class="brand-text">M&amp;M Contadores</span>
       </a>
 
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#packs">Packs</a></li>
-        <li><a href="#pymes">PYMEs</a></li>
-        <li><a href="#empleadores">Empleadores</a></li>
-        <li><a href="https://wa.me/5491150582474" class="btn btn-sm btn-primary" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a aria-current="page" href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="nav-action" href="https://wa.me/5491150582474" target="_blank" rel="noopener">WhatsApp</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio" aria-label="Presentación">
-    <img class="hero-bg" src="img/estudio-contable-spinetta-e1563503869217.jpg" alt="" loading="eager">
-    <div class="hero-overlay" aria-hidden="true"></div>
-
-    <div class="hero-inner">
-      <p class="hero-kicker">100% online</p>
-      <h1>Más que impuestos</h1>
-      <p class="hero-subtitle">Ordenamos tus finanzas, tu negocio y la gestión de tus números.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="https://wa.me/5491150582474" target="_blank" rel="noopener">Consultanos por WhatsApp</a>
-        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
-      </div>
-      <p class="hero-note">
-        Somos <strong>Paula y Nicolás</strong>, Contadores Públicos UBA especializados en finanzas. Acompañamos a emprendedores, profesionales y PYMEs.
-      </p>
-    </div>
-  </section>
-
   <main>
-    <!-- Nosotros -->
-    <section class="section" id="nosotros">
-      <div class="section-head">
-        <h2>Nosotros</h2>
-        <p class="section-lead">Un estudio integral con servicios impositivos, financieros y de gestión para vos y para tu negocio.</p>
-      </div>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>Atención clara y cercana</h3>
-          <p>Te explicamos todo en simple, sin tecnicismos. Buscamos que tomes decisiones con información y tranquilidad.</p>
-          <ul class="checklist">
-            <li>Asesoramiento mensual</li>
-            <li>Recordatorios y checklist de vencimientos</li>
-            <li>Soporte por WhatsApp</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Contenido y educación</h3>
-          <p>En Instagram nos encontrás como <strong>@contadores.mm</strong>, donde compartimos novedades, estrategias y educación financiera/impositiva.</p>
-          <div class="inline-cta">
-            <a class="btn btn-link" href="https://www.instagram.com/contadores.mm/?hl=es" target="_blank" rel="noopener">Ver Instagram →</a>
-          </div>
+    <section class="hero hero-home">
+      <img src="img/estudio-contable-spinetta-e1563503869217.jpg" alt="" class="hero-media" />
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Estudio contable online</p>
+        <h1>Consultora integral para ordenar tus numeros</h1>
+        <p>Impuestos, contabilidad, sueldos y gestion para monotributistas, responsables inscriptos, empleadores y PYMEs.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contacto.html">Contactanos</a>
+          <a class="btn btn-light" href="servicios.html">Ver servicios</a>
         </div>
       </div>
     </section>
 
-    <!-- Servicios (estilo “cards” como referencia) -->
-    <section class="section section-alt" id="servicios">
-      <div class="section-head">
-        <h2>Servicios</h2>
-        <p class="section-lead">Elegí tu perfil y mirá los packs sugeridos.</p>
+    <section class="info-strip" aria-label="Datos de contacto">
+      <div class="container info-grid">
+        <article>
+          <span class="info-label">Atencion</span>
+          <strong>100% online</strong>
+          <p>Reuniones y seguimiento remoto para trabajar con agilidad.</p>
+        </article>
+        <article>
+          <span class="info-label">Contacto</span>
+          <strong>WhatsApp directo</strong>
+          <p>Consultas, documentacion y avisos de vencimientos.</p>
+        </article>
+        <article>
+          <span class="info-label">Especialidad</span>
+          <strong>Contable, laboral e impositivo</strong>
+          <p>Una mirada integral para el dia a dia de tu negocio.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="grid four">
-        <article class="service">
+    <section class="section split">
+      <div>
+        <p class="section-kicker">Bienvenido a M&amp;M</p>
+        <h2>Mas que impuestos: gestion clara para decidir mejor</h2>
+      </div>
+      <div>
+        <p>Somos Paula y Nicolas, Contadores Publicos UBA especializados en finanzas. Acompanamos a emprendedores, profesionales y PYMEs con procesos claros, recordatorios y asesoramiento mensual.</p>
+        <a class="text-link" href="nosotros.html">Conoce el estudio</a>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-heading">
+        <p class="section-kicker">Servicios profesionales</p>
+        <h2>Soluciones por perfil</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <img src="img/MMc.png" alt="" />
           <h3>Monotributistas</h3>
-          <p class="price">Desde $45.000</p>
-          <p>Altas, IIBB, recategorización, facturación y acompañamiento.</p>
-          <ul>
-            <li>Inscripción + Domicilio Fiscal Electrónico</li>
-            <li>Facturación electrónica y punto de venta</li>
-            <li>Calendario de vencimientos</li>
-          </ul>
-          <a class="btn btn-sm btn-ghost" href="#packs-monotributo">Ver packs</a>
+          <p>Altas, IIBB, recategorizacion, facturacion y acompanamiento para empezar prolijo.</p>
+          <a href="servicios.html#monotributo">Ver mas</a>
         </article>
-
-        <article class="service">
-          <h3>Inscriptos en IVA</h3>
-          <p class="price">Desde $75.000</p>
-          <p>IVA, IIBB/CM, Ganancias y reuniones mensuales.</p>
-          <ul>
-            <li>Liquidación mensual de IVA</li>
-            <li>Libro IVA</li>
-            <li>Ganancias anual + devoluciones</li>
-          </ul>
-          <a class="btn btn-sm btn-ghost" href="#packs-iva">Ver packs</a>
+        <article class="service-card">
+          <img src="img/MMc.png" alt="" />
+          <h3>Responsables inscriptos</h3>
+          <p>IVA, libros, Ingresos Brutos, Ganancias y reuniones mensuales para ordenar obligaciones.</p>
+          <a href="servicios.html#iva">Ver mas</a>
         </article>
-
-        <article class="service">
-          <h3>Gestión para PYMEs</h3>
-          <p class="price">Desde $90.000</p>
-          <p>Stock, márgenes, reportes, tableros y acompañamiento.</p>
-          <ul>
-            <li>Control de inventario y compras</li>
-            <li>Márgenes y rentabilidad</li>
-            <li>Reportes de ventas</li>
-          </ul>
-          <a class="btn btn-sm btn-ghost" href="#pymes">Ver detalle</a>
-        </article>
-
-        <article class="service">
-          <h3>Empleadores</h3>
-          <p class="price">Desde $45.000</p>
-          <p>Sueldos, cargas sociales/sindicales y libros.</p>
-          <ul>
-            <li>Liquidación de sueldos</li>
-            <li>DDJJ de cargas sociales</li>
-            <li>Libros sueldos</li>
-          </ul>
-          <a class="btn btn-sm btn-ghost" href="#empleadores">Ver detalle</a>
+        <article class="service-card">
+          <img src="img/MMc.png" alt="" />
+          <h3>PYMEs y gestion</h3>
+          <p>Stock, costos, margenes, reportes y tableros para vender con informacion confiable.</p>
+          <a href="servicios.html#pymes">Ver mas</a>
         </article>
       </div>
     </section>
 
-    <!-- Packs -->
-    <section class="section" id="packs">
-      <div class="section-head">
-        <h2>Packs y servicios</h2>
-        <p class="section-lead">Todo lo que incluye cada pack. Si no sabés cuál elegir, te guiamos en 5 minutos.</p>
+    <section class="section cta-band">
+      <div>
+        <p class="section-kicker">Primer paso</p>
+        <h2>Contanos que necesitas y te orientamos</h2>
+        <p>Revisamos tu situacion, definimos el perfil fiscal y te proponemos el servicio adecuado.</p>
       </div>
-
-      <div class="stack">
-        <div class="anchor" id="packs-monotributo"></div>
-        <h3 class="subsection">Monotributistas</h3>
-
-        <details class="accordion" open>
-          <summary>Pack 1 · Servicios eventuales</summary>
-          <div class="accordion-body">
-            <div class="cols">
-              <div>
-                <h4>Inscripciones iniciales</h4>
-                <ul>
-                  <li>Alta en Monotributo (ARCA)</li>
-                  <li>Alta en Ingresos Brutos (ARBA/AGIP u otra jurisdicción)</li>
-                  <li>Adhesión a Domicilio Fiscal Electrónico (ARCA + provincia)</li>
-                </ul>
-
-                <h4>Primeros pasos prácticos</h4>
-                <ul>
-                  <li>Configuración del punto de venta en ARCA</li>
-                  <li>Acompañamiento para emitir facturas electrónicas (web o app)</li>
-                  <li>Qué conceptos podés facturar y cuáles no</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Obligaciones periódicas</h4>
-                <ul>
-                  <li>Calendario de vencimientos (mensuales y anuales)</li>
-                  <li>Explicación simple de pagos de monotributo e IIBB</li>
-                  <li>Checklist/recordatorios para no olvidarte</li>
-                </ul>
-
-                <h4>Asesoramiento que suma</h4>
-                <ul>
-                  <li>Retenciones y percepciones (qué hacer si te las aplican)</li>
-                  <li>Recomendaciones para cobros: banco, billeteras, Mercado Pago</li>
-                  <li>Constancias útiles para presentar a clientes</li>
-                </ul>
-
-                <h4>Opcionales premium</h4>
-                <ul>
-                  <li>Alta en facturador móvil (Mercado Pago/Facturante, etc.)</li>
-                  <li>Mini-capacitación en gestión de clientes y cobranzas</li>
-                  <li>Asesoría para pasar a Responsable Inscripto cuando corresponda</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <details class="accordion">
-          <summary>Pack 2 · Monotributo + IIBB Régimen simplificado / Exento</summary>
-          <div class="accordion-body">
-            <ul class="gridlist">
-              <li>Altas: Monotributo (ARCA) + IIBB (ARBA/AGIP u otra jurisdicción)</li>
-              <li>Domicilio Fiscal Electrónico (ARCA + provincia)</li>
-              <li>Punto de venta ARCA + Facturador móvil</li>
-              <li>Recategorización semestral</li>
-              <li>Boleta Monotributo e IIBB</li>
-              <li>Solicitud devolución de percepciones (anual)</li>
-              <li>Facturación mensual</li>
-              <li>Reunión de asesoramiento mensual</li>
-              <li>Atención por WhatsApp</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="accordion">
-          <summary>Pack 3 · Monotributo + IIBB Régimen general / Convenio Multilateral (hasta 2 jurisdicciones)</summary>
-          <div class="accordion-body">
-            <ul class="gridlist">
-              <li>Altas: Monotributo + IIBB (ARBA/AGIP u otra jurisdicción)</li>
-              <li>Domicilio Fiscal Electrónico</li>
-              <li>Punto de venta + Facturador móvil</li>
-              <li>Recategorización semestral</li>
-              <li>Boleta Monotributo</li>
-              <li>Liquidación mensual y anual de IIBB / CM</li>
-              <li>Solicitud devolución de percepciones (anual)</li>
-              <li>Facturación mensual</li>
-              <li>Reunión mensual + WhatsApp</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="accordion">
-          <summary>Pack 4 · Monotributo + Convenio Multilateral (más de 2 jurisdicciones)</summary>
-          <div class="accordion-body">
-            <ul class="gridlist">
-              <li>Altas: Monotributo + IIBB (según corresponda)</li>
-              <li>Domicilio Fiscal Electrónico</li>
-              <li>Punto de venta + Facturador móvil</li>
-              <li>Recategorización semestral</li>
-              <li>Boleta Monotributo</li>
-              <li>Liquidación mensual y anual de Convenio Multilateral</li>
-              <li>Solicitud devolución de percepciones (anual)</li>
-              <li>Facturación mensual</li>
-              <li>Reunión mensual + WhatsApp</li>
-            </ul>
-          </div>
-        </details>
-
-        <div class="anchor" id="packs-iva"></div>
-        <h3 class="subsection">Inscriptos en IVA</h3>
-
-        <details class="accordion" open>
-          <summary>Pack 1 · IVA + IIBB (hasta 2 jurisdicciones)</summary>
-          <div class="accordion-body">
-            <ul class="gridlist">
-              <li>Liquidación mensual de IVA</li>
-              <li>Libro IVA</li>
-              <li>Liquidación mensual IIBB / Convenio Multilateral</li>
-              <li>Liquidación anual IIBB / Convenio Multilateral</li>
-              <li>Liquidación anual Ganancias</li>
-              <li>Solicitud devolución de percepciones (anual)</li>
-              <li>Reunión de asesoramiento mensual</li>
-              <li>Atención por WhatsApp</li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="accordion">
-          <summary>Pack 2 · IVA + IIBB (más de 2 jurisdicciones)</summary>
-          <div class="accordion-body">
-            <ul class="gridlist">
-              <li>Liquidación mensual de IVA</li>
-              <li>Libro IVA</li>
-              <li>Liquidación mensual y anual Convenio Multilateral</li>
-              <li>Liquidación anual Ganancias</li>
-              <li>Solicitud devolución de percepciones (anual)</li>
-              <li>Reunión de asesoramiento mensual</li>
-              <li>Atención por WhatsApp</li>
-            </ul>
-          </div>
-        </details>
-      </div>
+      <a class="btn btn-primary" href="contacto.html">Pedir asesoramiento</a>
     </section>
-
-    <!-- PYMEs (Gestión Inteligente) -->
-    <section class="section section-alt" id="pymes">
-      <div class="section-head">
-        <h2>Gestión inteligente para PYMEs</h2>
-        <p class="section-lead">Para negocios que venden productos y necesitan más control en el día a día.</p>
-      </div>
-
-      <div class="grid three">
-        <article class="card">
-          <h3>Pack 1</h3>
-          <p class="muted">Gestión de Stock + planilla básica</p>
-          <ul class="checklist">
-            <li>Relevamos y ordenamos tu inventario</li>
-            <li>Sistema simple de control (planilla o software)</li>
-            <li>Planificación de compras (menos quiebres/exceso)</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Pack 2</h3>
-          <p class="muted">Stock + márgenes + reportes</p>
-          <ul class="checklist">
-            <li>Todo lo del Pack 1</li>
-            <li>Análisis de costos y precios</li>
-            <li>Márgenes por producto + tableros/resúmenes</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Pack 3</h3>
-          <p class="muted">Acompañamiento personalizado</p>
-          <ul class="checklist">
-            <li>Todo lo del Pack 2</li>
-            <li>Puntos críticos y recomendaciones</li>
-            <li>Reuniones periódicas + ajustes por rubro</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="callout">
-        <h3>Beneficios para tu empresa</h3>
-        <ul class="checklist">
-          <li>Controlás mejor tu stock</li>
-          <li>Comprás de forma más inteligente</li>
-          <li>Sabés cuánto ganás en cada producto</li>
-          <li>Crecés con datos claros</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Empleadores -->
-    <section class="section section-last" id="empleadores">
-      <div class="section-head">
-        <h2>Servicios para empleadores</h2>
-        <p class="section-lead">Liquidación de cargas, sindicales y libros. Te acompañamos mes a mes.</p>
-      </div>
-
-      <div class="grid two">
-        <article class="card">
-          <h3>Hasta 5 empleados</h3>
-          <ul class="checklist">
-            <li>Liquidación de cargas sociales</li>
-            <li>Liquidación de cargas sindicales</li>
-            <li>Libros sueldos</li>
-            <li>Reunión de asesoramiento mensual</li>
-            <li>Atención por WhatsApp</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Más de 5 empleados</h3>
-          <ul class="checklist">
-            <li>Liquidación de cargas sociales</li>
-            <li>Liquidación de cargas sindicales</li>
-            <li>Libros sueldos</li>
-            <li>Reunión de asesoramiento mensual</li>
-            <li>Atención por WhatsApp</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="container footer-grid">
       <div>
-        <p class="footer-brand">M&M Contadores</p>
-        <p class="muted">Servicios impositivos, financieros y de gestión. 100% online.</p>
+        <p class="footer-brand">M&amp;M Contadores</p>
+        <p>Servicios impositivos, financieros y de gestion. Atencion online para toda Argentina.</p>
       </div>
       <div>
-        <p class="footer-title">Menú</p>
-        <ul class="footer-menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#packs">Packs</a></li>
-          <li><a href="https://www.instagram.com/contadores.mm/?hl=es" target="_blank" rel="noopener">Instagram</a></li>
-        </ul>
+        <p class="footer-title">Menu</p>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
       </div>
       <div>
-        <p class="footer-title">Atención</p>
-        <p class="muted">Lun a Vie · 9 a 18 h</p>
-        <a class="btn btn-sm btn-ghost" href="https://wa.me/5491150582474" target="_blank" rel="noopener">Pedir presupuesto</a>
+        <p class="footer-title">Redes</p>
+        <a href="https://www.instagram.com/contadores.mm/?hl=es" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5491150582474" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-
-    <p class="credits">© <span id="year"></span> M&M Contadores. Todos los derechos reservados.</p>
+    <p class="credits">&copy; <span id="year"></span> M&amp;M Contadores. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- WhatsApp floating button -->
-  <a class="wa-float" href="https://wa.me/5491150582474" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
-    <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-      <path d="M16.04 3.2c-7.02 0-12.73 5.7-12.73 12.72 0 2.25.59 4.45 1.72 6.38L3.2 28.8l6.66-1.75a12.68 12.68 0 0 0 6.18 1.57c7.02 0 12.72-5.7 12.72-12.72S23.06 3.2 16.04 3.2Zm0 23.28c-1.93 0-3.82-.52-5.46-1.5l-.39-.23-3.95 1.04 1.05-3.85-.25-.4a10.48 10.48 0 0 1-1.6-5.62c0-5.85 4.76-10.6 10.6-10.6 5.85 0 10.6 4.75 10.6 10.6s-4.75 10.56-10.6 10.56Zm5.8-7.93c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.69.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.54 1.13 3.04 1.29 3.25.16.21 2.23 3.4 5.39 4.77.75.32 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" />
-    </svg>
-  </a>
-
-  <!-- Structured data (completá con datos reales si querés SEO más fino) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "name": "M&M Contadores",
-    "url": "https://mmcontadores.com.ar",
-    "areaServed": "AR",
-    "serviceType": ["Impositivo", "Financiero", "Gestión"],
-    "telephone": "+54 9 1150582474"
-  }
-  </script>
-
-  <script src="/js/main.js" defer></script>
+  <a class="wa-float" href="https://wa.me/5491150582474" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">WA</a>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
